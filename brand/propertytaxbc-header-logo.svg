@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 70">
+  <!-- PropertyTaxBC — combined mark+wordmark lockup, transparent background, for -->
+  <!-- external use (social avatars, email signatures, print) where a single flat -->
+  <!-- image is needed. The live site header does NOT use this file — it composes -->
+  <!-- the same mark as inline SVG next to real HTML text instead, for accessibility -->
+  <!-- and so the text always matches the page's actual live CSS. This file's mark -->
+  <!-- geometry is the live /favicon.svg-style icon scaled up, not a new design, and -->
+  <!-- the wordmark uses the site's actual system font stack (no Manrope — the live -->
+  <!-- pages load no webfonts at all). -->
+  <g transform="translate(5,5) scale(0.9375)">
+    <rect x="4" y="4" width="56" height="56" rx="8" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <path d="M14 32 L26 44 L50 16" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M14 48 H50" stroke="#c1592f" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+  <text x="82" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="46" fill="#ffffff">PropertyTax<tspan fill="#c1592f">BC</tspan></text>
+</svg>

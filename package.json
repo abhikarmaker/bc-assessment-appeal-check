@@ -1,0 +1,17 @@
+{
+  "name": "propertytaxbc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free BC homeowner tools: a property assessment appeal check and a property tax deferment eligibility checker.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "serve": "http-server . -p 8123 -s -c-1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "http-server": "^14.1.1",
+    "wrangler": "^4.125.0"
+  }
+}

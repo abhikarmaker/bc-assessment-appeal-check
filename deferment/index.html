@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BC Property Tax Deferment Eligibility Checker | PropertyTaxBC</title>
+<meta name="description" content="Check whether you likely qualify for BC's Regular or Families with Children property tax deferment program, see the current interest rate, and apply directly through gov.bc.ca.">
+<link rel="canonical" href="https://propertytaxbc.ca/deferment">
+<meta name="theme-color" content="#241f1c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropertyTaxBC">
+<meta property="og:title" content="BC Property Tax Deferment Eligibility Checker">
+<meta property="og:description" content="Check whether you likely qualify for BC's Regular or Families with Children property tax deferment program, see the current interest rate, and apply directly through gov.bc.ca.">
+<meta property="og:url" content="https://propertytaxbc.ca/deferment">
+<meta property="og:image" content="https://propertytaxbc.ca/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BC Property Tax Deferment Eligibility Checker">
+<meta name="twitter:description" content="Check whether you likely qualify, see the current interest rate, and apply directly through gov.bc.ca.">
+<meta name="twitter:image" content="https://propertytaxbc.ca/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="/">
+      <img class="brand-logo-img" src="/brand/propertytaxbc-header-logo.svg" alt="PropertyTaxBC">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="main-nav">
+        <li><a href="/">Free Check</a></li>
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/deadlines">Deadlines</a></li>
+        <li><a href="/evidence">Evidence</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/deferment" aria-current="page">Deferment Check</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Property Tax Deferment Eligibility Checker</h1>
+      <p class="lead">A second free tool: check whether you likely qualify for BC's property tax deferment program, understand what it actually costs, and apply directly through the government's own portal if it makes sense for you.</p>
+      <div class="badge-row">
+        <span class="badge">Free, no obligation</span>
+        <span class="badge">Nothing collected — runs in your browser</span>
+        <span class="badge">Not affiliated with the Province of BC</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="check">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,0.9fr); gap:2.5rem; align-items:start;" class="check-grid">
+        <div>
+          <h2>Eligibility check</h2>
+          <p class="section-intro">Answer a few questions about your situation. This runs entirely in your browser — nothing you enter here is sent or stored anywhere.</p>
+
+          <form id="deferment-form" class="calc-card" novalidate>
+            <div class="field">
+              <label for="status">Which of these applies to you?</label>
+              <select id="status" name="status" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="55plus">I'm 55 or older this year</option>
+                <option value="survivingSpouse">I'm a surviving spouse</option>
+                <option value="disability">I have a person-with-disabilities (PWD) designation</option>
+                <option value="none">None of these</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Do you financially support a dependent child?</label>
+              <div class="hint" style="margin:0 0 0.5rem;">Under 18 and living with you (full or part-time, or you pay child support), or a child of any age who has a disability designation or attends a post-secondary institution.</div>
+              <label style="font-weight:400;"><input type="radio" name="supportingChild" value="yes"> Yes</label>
+              &nbsp;&nbsp;
+              <label style="font-weight:400;"><input type="radio" name="supportingChild" value="no" checked> No</label>
+            </div>
+
+            <div class="field">
+              <label>Have you lived in B.C. for at least one year?</label>
+              <label style="font-weight:400;"><input type="radio" name="residency" value="yes" checked> Yes</label>
+              &nbsp;&nbsp;
+              <label style="font-weight:400;"><input type="radio" name="residency" value="no"> No</label>
+            </div>
+
+            <div class="field">
+              <label>Do you owe any unpaid property taxes, utility fees, penalties, or interest from previous years?</label>
+              <label style="font-weight:400;"><input type="radio" name="taxesArrears" value="yes"> Yes</label>
+              &nbsp;&nbsp;
+              <label style="font-weight:400;"><input type="radio" name="taxesArrears" value="no" checked> No</label>
+            </div>
+
+            <div class="field">
+              <label>Have you already paid this year's property taxes in full?</label>
+              <label style="font-weight:400;"><input type="radio" name="currentPaid" value="yes"> Yes</label>
+              &nbsp;&nbsp;
+              <label style="font-weight:400;"><input type="radio" name="currentPaid" value="no" checked> No</label>
+            </div>
+
+            <div class="field">
+              <label for="equity">Roughly how much equity do you have in the property?</label>
+              <select id="equity" name="equity" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="75">75% or more</option>
+                <option value="50">50%&ndash;74%</option>
+                <option value="25">25%&ndash;49%</option>
+                <option value="15">15%&ndash;24%</option>
+                <option value="under15">Under 15%</option>
+                <option value="unsure">Not sure</option>
+              </select>
+              <div class="hint">Equity = (BC Assessment value &minus; everything registered against the property, mortgages, lines of credit, etc.) &divide; BC Assessment value.</div>
+            </div>
+
+            <button type="submit" class="btn btn-block">Check my eligibility</button>
+          </form>
+
+          <div id="deferment-result" class="result" role="status" aria-live="polite"></div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0;">Current interest rate</h3>
+            <p style="font-size:1.8rem; font-weight:700; color:var(--terracotta-dark); margin:0;">6.45%</p>
+            <p class="hint" style="margin-top:0.25rem;">Compound, prime (4.45%) + 2% &mdash; effective Jul 1&ndash;Sep 30, 2026. Applies to both programs for taxes deferred from the 2026 tax year onward. This rate resets roughly every six months &mdash; always confirm the current figure on <a href="https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-tax-deferment-program/tax-deferment-interest-fees" target="_blank" rel="noopener">gov.bc.ca</a>.</p>
+          </div>
+          <div class="card" style="margin-top:1.25rem;">
+            <h3 style="margin-top:0;">It's a loan, not free money</h3>
+            <p style="margin-bottom:0;">Deferred taxes plus accumulating interest are repaid when you sell or transfer the property, and the province places a restrictive lien on your title while deferred. This tool presents the trade-off; it doesn't tell you whether to defer.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container prose">
+      <h2>How deferment actually works</h2>
+      <p class="section-intro">The two BC deferment programs, what they require, and what they cost.</p>
+
+      <h3>The two programs</h3>
+      <p><strong>Regular Program:</strong> for homeowners who are 55 or older, a surviving spouse of any age, or a person with disabilities. There's a $60 one-time application fee and a $10 annual renewal fee. Minimum equity required: 25% of your property's assessed value, and you have to maintain that equity while deferring.</p>
+      <p><strong>Families with Children Program:</strong> for homeowners financially supporting a dependent child under 18, or an adult child with a disability, or one attending a post-secondary institution. No application or renewal fees. Minimum equity required: 15% of your property's assessed value, also maintained throughout the deferment.</p>
+      <p>Both programs also require at least one year of B.C. residency before applying, and both require that all previous years' property taxes, utility fees, penalties, and interest are already paid. Deferment only applies to the current year's taxes.</p>
+
+      <h3>The interest, and why 2026 changed the math</h3>
+      <p>Deferred taxes accrue interest until repaid. For tax years 2025 and earlier, that interest was simple and the two programs had different rates (Regular ran two points below prime; Families with Children ran at prime). Starting with the 2026 tax year, both programs charge <strong>compound interest at prime plus 2%</strong>, currently 6.45%, compounding monthly rather than once. In practice, that means interest is charged on interest that's already accrued, so a deferred balance grows faster over time than it would have under the old rules. Taxes deferred in 2025 or earlier keep the old simple-interest terms; only 2026-and-later deferrals are affected.</p>
+
+      <h3>What happens when you sell or transfer</h3>
+      <p>The full deferred amount, plus all interest that's accumulated, becomes due at that point. Until then, the province registers a restrictive lien against your property's title, which can come up if you try to refinance or take out a new line of credit while taxes are deferred.</p>
+
+      <h3>Should you defer?</h3>
+      <p>That depends on your own finances and plans, not something a generic tool can answer for you. The trade-off is real in both directions: deferring frees up cash today, but the bill you eventually owe grows every year it's outstanding, faster now than under the pre-2026 rules. If you're weighing it, the government's own <a href="https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-tax-deferment-program" target="_blank" rel="noopener">program page</a> and a look at your own long-term plans for the property are the right starting points.</p>
+
+      <p><a href="https://www2.gov.bc.ca/gov/content/taxes/property-taxes/annual-property-tax/property-tax-deferment-program/apply" target="_blank" rel="noopener" class="btn btn-secondary">Apply on the official gov.bc.ca portal →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="disclaimer">
+        <strong>This is a free educational tool, not financial or legal advice, and not part of any government program.</strong>
+        We are not affiliated with, endorsed by, or connected to the Property Tax Deferment Program or the Government of British Columbia. This eligibility check is a general estimate based on the answers you enter. Applications and final eligibility decisions are made by the Province of BC. Nothing you enter on this page is collected, stored, or sent anywhere.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">
+      <div class="footer-brand-mark">
+        <img class="footer-logo-img" src="/brand/propertytaxbc-header-logo.svg" alt="PropertyTaxBC">
+      </div>
+      <div class="footer-flag">
+        <span class="footer-leaf" aria-hidden="true">&#127809;</span>
+        Proudly Canadian
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Guide</h4>
+        <ul>
+          <li><a href="/how-it-works">How It Works</a></li>
+          <li><a href="/deadlines">Deadlines</a></li>
+          <li><a href="/evidence">Evidence</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/deferment">Deferment Check</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/#lead-section">Get Connected</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>PropertyTaxBC is an independent referral and educational service. We are not affiliated with, endorsed by, or connected to BC Assessment, the Property Assessment Review Panel, the Property Assessment Appeal Board, the Property Tax Deferment Program, or the Government of British Columbia.</p>
+      <p>&copy; 2026 PropertyTaxBC. A project of EasyTech Digital Solutions.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/deferment.js"></script>
+</body>
+</html>

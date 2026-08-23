@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- PropertyTaxBC — favicon / app icon, solid fill so it works on any background. -->
+  <!-- Identical geometry/colors to the live /favicon.svg — this file exists as a -->
+  <!-- portable copy for external use (app stores, social avatars, etc.), not a -->
+  <!-- different design. Background is the exact --charcoal (#241f1c), not an estimate. -->
+  <rect width="64" height="64" rx="14" fill="#241f1c"/>
+  <path d="M8 32 L24 48 L56 12" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="8" y="50" width="48" height="5" rx="2.5" fill="#c1592f"/>
+</svg>

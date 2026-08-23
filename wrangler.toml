@@ -1,0 +1,17 @@
+name = "bc-assessment-appeal-check"
+compatibility_date = "2026-08-01"
+pages_build_output_dir = "."
+
+# KV namespace for lead capture (see functions/api/lead.js and functions/api/leads.js).
+# Create it with:
+#   wrangler kv namespace create LEADS
+#   wrangler kv namespace create LEADS --preview
+# then paste the resulting ids below.
+[[kv_namespaces]]
+binding = "LEADS"
+id = "REPLACE_WITH_PRODUCTION_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_PREVIEW_NAMESPACE_ID"
+
+# ADMIN_TOKEN is a secret, not a var — set it with:
+#   wrangler pages secret put ADMIN_TOKEN
+# Do not add it here in plaintext.

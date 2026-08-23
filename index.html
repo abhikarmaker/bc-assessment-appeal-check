@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free BC Property Assessment Appeal Check | PropertyTaxBC</title>
+<meta name="description" content="Check whether your BC property assessment increase looks appeal-worthy, free. Learn how the PARP appeal process works and connect with a licensed BC property tax professional.">
+<link rel="canonical" href="https://propertytaxbc.ca/">
+<meta name="theme-color" content="#241f1c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropertyTaxBC">
+<meta property="og:title" content="Free BC Property Assessment Appeal Check">
+<meta property="og:description" content="Check whether your BC property assessment increase looks appeal-worthy, free. Learn how the PARP appeal process works and connect with a licensed BC property tax professional.">
+<meta property="og:url" content="https://propertytaxbc.ca/">
+<meta property="og:image" content="https://propertytaxbc.ca/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free BC Property Assessment Appeal Check">
+<meta name="twitter:description" content="Check whether your BC property assessment increase looks appeal-worthy, free.">
+<meta name="twitter:image" content="https://propertytaxbc.ca/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PropertyTaxBC",
+  "url": "https://propertytaxbc.ca/",
+  "logo": "https://propertytaxbc.ca/favicon.svg",
+  "description": "Free BC homeowner tools: a property assessment appeal check and a property tax deferment eligibility checker."
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="/">
+      <img class="brand-logo-img" src="/brand/propertytaxbc-header-logo.svg" alt="PropertyTaxBC">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="main-nav">
+        <li><a href="/" aria-current="page">Free Check</a></li>
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/deadlines">Deadlines</a></li>
+        <li><a href="/evidence">Evidence</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/deferment">Deferment Check</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Is your BC property assessment too high?</h1>
+      <p class="lead">Get a free, honest read on whether your BC Assessment notice looks worth appealing, then connect with a licensed BC property tax professional if it does.</p>
+      <div class="badge-row">
+        <span class="badge">Free, no obligation</span>
+        <span class="badge">Not affiliated with BC Assessment</span>
+        <span class="badge">No documents filed on your behalf</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="check">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,0.9fr); gap:2.5rem; align-items:start;" class="check-grid">
+        <div>
+          <h2>Free assessment check</h2>
+          <p class="section-intro">Enter your current and previous assessed values from your BC Assessment notice. If you enter your neighbourhood's average change too (also on the notice), we can give you a more useful, relative read.</p>
+
+          <form id="check-form" class="calc-card" novalidate>
+            <div class="field">
+              <label for="currentValue">Current assessed value ($)</label>
+              <input type="text" inputmode="numeric" id="currentValue" name="currentValue" placeholder="e.g. 950000" required>
+            </div>
+            <div class="field">
+              <label for="previousValue">Previous year's assessed value ($)</label>
+              <input type="text" inputmode="numeric" id="previousValue" name="previousValue" placeholder="e.g. 820000" required>
+            </div>
+            <div class="field">
+              <label for="neighbourhoodChange">Average change for properties in your area (%) <span style="font-weight:400;">— optional</span></label>
+              <input type="text" inputmode="decimal" id="neighbourhoodChange" name="neighbourhoodChange" placeholder="e.g. 8">
+              <div class="hint">Look for a line like "average change for properties in your area" on your notice. Without it, we can only show your own change, not how it compares.</div>
+            </div>
+            <div class="field">
+              <label for="propertyAddress">Street address <span style="font-weight:400;">— optional</span></label>
+              <input type="text" id="propertyAddress" name="propertyAddress" placeholder="e.g. 123 Main St" autocomplete="address-line1">
+              <div class="hint">Doesn't affect your result — just saves you retyping it below if you connect with a professional.</div>
+            </div>
+            <div class="field">
+              <label for="propertyMunicipality">Municipality <span style="font-weight:400;">— optional</span></label>
+              <input type="text" id="propertyMunicipality" name="propertyMunicipality" list="bc-municipalities" placeholder="Start typing to search…" autocomplete="address-level2">
+              <datalist id="bc-municipalities">
+                <option value="100 Mile House"></option>
+                <option value="Abbotsford"></option>
+                <option value="Alert Bay"></option>
+                <option value="Anmore"></option>
+                <option value="Armstrong"></option>
+                <option value="Ashcroft"></option>
+                <option value="Barriere"></option>
+                <option value="Belcarra"></option>
+                <option value="Bowen Island"></option>
+                <option value="Burnaby"></option>
+                <option value="Burns Lake"></option>
+                <option value="Cache Creek"></option>
+                <option value="Campbell River"></option>
+                <option value="Canal Flats"></option>
+                <option value="Castlegar"></option>
+                <option value="Central Saanich"></option>
+                <option value="Chase"></option>
+                <option value="Chetwynd"></option>
+                <option value="Chilliwack"></option>
+                <option value="Clearwater"></option>
+                <option value="Clinton"></option>
+                <option value="Coldstream"></option>
+                <option value="Colwood"></option>
+                <option value="Comox"></option>
+                <option value="Coquitlam"></option>
+                <option value="Courtenay"></option>
+                <option value="Cranbrook"></option>
+                <option value="Creston"></option>
+                <option value="Cumberland"></option>
+                <option value="Daajing Giids"></option>
+                <option value="Dawson Creek"></option>
+                <option value="Delta"></option>
+                <option value="Duncan"></option>
+                <option value="Elkford"></option>
+                <option value="Enderby"></option>
+                <option value="Esquimalt"></option>
+                <option value="Fernie"></option>
+                <option value="Fort St. James"></option>
+                <option value="Fort St. John"></option>
+                <option value="Fraser Lake"></option>
+                <option value="Fruitvale"></option>
+                <option value="Gibsons"></option>
+                <option value="Gold River"></option>
+                <option value="Golden"></option>
+                <option value="Grand Forks"></option>
+                <option value="Granisle"></option>
+                <option value="Greenwood"></option>
+                <option value="Harrison Hot Springs"></option>
+                <option value="Hazelton"></option>
+                <option value="Highlands"></option>
+                <option value="Hope"></option>
+                <option value="Houston"></option>
+                <option value="Hudson's Hope"></option>
+                <option value="Invermere"></option>
+                <option value="Kamloops"></option>
+                <option value="Kaslo"></option>
+                <option value="Kelowna"></option>
+                <option value="Kent"></option>
+                <option value="Keremeos"></option>
+                <option value="Kimberley"></option>
+                <option value="Kitimat"></option>
+                <option value="Ladysmith"></option>
+                <option value="Lake Country"></option>
+                <option value="Lake Cowichan"></option>
+                <option value="Langford"></option>
+                <option value="Langley (City)"></option>
+                <option value="Langley (Township)"></option>
+                <option value="Lantzville"></option>
+                <option value="Lillooet"></option>
+                <option value="Lions Bay"></option>
+                <option value="Logan Lake"></option>
+                <option value="Lumby"></option>
+                <option value="Lytton"></option>
+                <option value="Mackenzie"></option>
+                <option value="Maple Ridge"></option>
+                <option value="Masset"></option>
+                <option value="McBride"></option>
+                <option value="Merritt"></option>
+                <option value="Metchosin"></option>
+                <option value="Midway"></option>
+                <option value="Mission"></option>
+                <option value="Montrose"></option>
+                <option value="Nakusp"></option>
+                <option value="Nanaimo"></option>
+                <option value="Nelson"></option>
+                <option value="New Denver"></option>
+                <option value="New Hazelton"></option>
+                <option value="New Westminster"></option>
+                <option value="North Cowichan"></option>
+                <option value="North Saanich"></option>
+                <option value="North Vancouver (City)"></option>
+                <option value="North Vancouver (District)"></option>
+                <option value="Northern Rockies"></option>
+                <option value="Oak Bay"></option>
+                <option value="Oliver"></option>
+                <option value="Osoyoos"></option>
+                <option value="Parksville"></option>
+                <option value="Peachland"></option>
+                <option value="Pemberton"></option>
+                <option value="Penticton"></option>
+                <option value="Pitt Meadows"></option>
+                <option value="Port Alberni"></option>
+                <option value="Port Alice"></option>
+                <option value="Port Clements"></option>
+                <option value="Port Coquitlam"></option>
+                <option value="Port Edward"></option>
+                <option value="Port Hardy"></option>
+                <option value="Port McNeill"></option>
+                <option value="Port Moody"></option>
+                <option value="Pouce Coupe"></option>
+                <option value="Powell River"></option>
+                <option value="Prince George"></option>
+                <option value="Prince Rupert"></option>
+                <option value="Princeton"></option>
+                <option value="Qualicum Beach"></option>
+                <option value="Quesnel"></option>
+                <option value="Radium Hot Springs"></option>
+                <option value="Revelstoke"></option>
+                <option value="Richmond"></option>
+                <option value="Rossland"></option>
+                <option value="Saanich"></option>
+                <option value="Salmo"></option>
+                <option value="Salmon Arm"></option>
+                <option value="Sayward"></option>
+                <option value="Sechelt"></option>
+                <option value="shíshálh Nation"></option>
+                <option value="Sicamous"></option>
+                <option value="Sidney"></option>
+                <option value="Silverton"></option>
+                <option value="Slocan"></option>
+                <option value="Smithers"></option>
+                <option value="Sooke"></option>
+                <option value="Spallumcheen"></option>
+                <option value="Sparwood"></option>
+                <option value="Squamish"></option>
+                <option value="Stewart"></option>
+                <option value="Summerland"></option>
+                <option value="Sun Peaks"></option>
+                <option value="Surrey"></option>
+                <option value="Tahsis"></option>
+                <option value="Taylor"></option>
+                <option value="Telkwa"></option>
+                <option value="Terrace"></option>
+                <option value="Tofino"></option>
+                <option value="Trail"></option>
+                <option value="Tumbler Ridge"></option>
+                <option value="Ucluelet"></option>
+                <option value="Valemount"></option>
+                <option value="Vancouver"></option>
+                <option value="Vanderhoof"></option>
+                <option value="Vernon"></option>
+                <option value="Victoria"></option>
+                <option value="View Royal"></option>
+                <option value="Warfield"></option>
+                <option value="Wells"></option>
+                <option value="West Kelowna"></option>
+                <option value="West Vancouver"></option>
+                <option value="Whistler"></option>
+                <option value="White Rock"></option>
+                <option value="Williams Lake"></option>
+                <option value="Zeballos"></option>
+              </datalist>
+              <div class="hint">Searchable — start typing to filter BC's ~160 municipalities. Runs entirely in your browser; nothing is looked up externally.</div>
+            </div>
+            <button type="submit" class="btn btn-block">Check my assessment</button>
+          </form>
+
+          <div id="check-result" class="result" role="status" aria-live="polite"></div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0;">Filing deadline</h3>
+            <div class="countdown" data-deadline-countdown></div>
+            <p style="margin-bottom:0;"><a href="/deadlines">Full deadline details →</a></p>
+          </div>
+          <div class="card" style="margin-top:1.25rem;">
+            <h3 style="margin-top:0;">What counts as a valid reason?</h3>
+            <p>"My assessment went up too much" is <strong>not</strong>, on its own, a valid ground for a complaint. What matters is whether the assessed value reflects actual market value as of July 1 — not how much it changed from last year.</p>
+            <p style="margin-bottom:0;"><a href="/how-it-works">See the actual grounds →</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <h2>How the appeal process works, briefly</h2>
+      <p class="section-intro">This isn't a legal filing service — it's a plain-language guide plus a referral. The actual process (called PARP) is free to file and runs every year on a tight, fixed timeline.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>1. File a complaint</h3>
+          <p>Free, filed directly with BC Assessment, by the January deadline.</p>
+        </div>
+        <div class="card">
+          <h3>2. PARP hearing</h3>
+          <p>A short phone hearing, typically 30 minutes, held between February and mid-March.</p>
+        </div>
+        <div class="card">
+          <h3>3. Decision</h3>
+          <p>Usually given verbally at the hearing, with a written notice mailed by April 7.</p>
+        </div>
+        <div class="card">
+          <h3>4. Escalate if needed</h3>
+          <p>Not satisfied? Appeal to the Property Assessment Appeal Board by April 30 — firm, no extensions.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem;"><a href="/how-it-works" class="btn btn-secondary">Read the full guide →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card" style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center; justify-content:space-between;">
+        <div style="max-width:36em;">
+          <h3 style="margin-top:0;">Also paying more than you'd like in property tax itself?</h3>
+          <p style="margin-bottom:0;">A second free tool: check whether you likely qualify for BC's property tax deferment program, and see what it actually costs before you apply.</p>
+        </div>
+        <a href="/deferment" class="btn btn-secondary" style="text-align:center;">Check deferment eligibility →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lead-section">
+    <div class="container">
+      <div style="max-width:44em;">
+        <h2>Connect with a BC property tax professional</h2>
+        <p class="section-intro">If your situation looks worth pursuing, we can pass your information along to a licensed BC property tax professional currently participating in our referral program. There's no cost to you, and no obligation to proceed after they contact you.</p>
+      </div>
+
+      <form id="lead-form" class="calc-card" novalidate style="max-width:44em;">
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+          <label for="company_website">Leave this field blank</label>
+          <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span style="font-weight:400;">— optional</span></label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="field">
+          <label for="address">Property address</label>
+          <input type="text" id="address" name="address" placeholder="Street address, city">
+        </div>
+        <div class="field">
+          <label for="rollNumber">Assessment roll number <span style="font-weight:400;">— optional if you gave an address</span></label>
+          <input type="text" id="rollNumber" name="rollNumber">
+        </div>
+        <div class="field">
+          <label for="lead-currentValue">Current assessed value ($)</label>
+          <input type="text" inputmode="numeric" id="lead-currentValue" name="currentValue">
+        </div>
+        <div class="field">
+          <label for="lead-previousValue">Previous year's assessed value ($)</label>
+          <input type="text" inputmode="numeric" id="lead-previousValue" name="previousValue">
+        </div>
+        <div class="field">
+          <label for="situation">Briefly describe your situation <span style="font-weight:400;">— optional</span></label>
+          <textarea id="situation" name="situation" rows="4" placeholder="Anything you think is relevant — e.g. recent comparable sales, a condition issue, an error in your property details."></textarea>
+        </div>
+
+        <div class="consent-row">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I agree that my information will be shared with a BC property tax professional so they can contact me about my situation. See our <a href="/privacy">Privacy Policy</a>.</label>
+        </div>
+
+        <button type="submit" id="lead-submit" class="btn btn-block">Submit</button>
+        <div id="lead-form-status" class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <h2>Common questions</h2>
+      <div class="faq-item">
+        <h3>Is my assessment worth appealing?</h3>
+        <p>It depends on whether your assessed value is actually higher than what comparable properties sold for around the valuation date, not simply on how much it increased from last year. Our free check above gives a general read, but a professional review of your specific comparables is the most reliable way to know.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is it free to file a complaint?</h3>
+        <p>Yes, filing with the Property Assessment Review Panel (the first level) is free. If you need to escalate to the Property Assessment Appeal Board, there's a $30 fee for residential properties.</p>
+      </div>
+      <div class="faq-item" style="border-bottom:none;">
+        <h3>Do I need a lawyer?</h3>
+        <p>No, a PARP hearing is designed for homeowners to represent themselves. Some people choose to work with a property tax professional, which is what our referral connects you with, but it isn't required.</p>
+      </div>
+      <p style="margin-top:1.5rem;"><a href="/faq">See the full FAQ →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="disclaimer">
+        <strong>This site is a free educational tool and referral service, not a law firm, tax consultancy, or appraisal firm.</strong>
+        We are not affiliated with, endorsed by, or connected to BC Assessment, the Property Assessment Review Panel, the Property Assessment Appeal Board, or the Government of British Columbia. We don't prepare, file, or submit documents on your behalf, and we don't guarantee any outcome. See our <a href="/terms">Terms of Use</a> for details.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">
+      <div class="footer-brand-mark">
+        <img class="footer-logo-img" src="/brand/propertytaxbc-header-logo.svg" alt="PropertyTaxBC">
+      </div>
+      <div class="footer-flag">
+        <span class="footer-leaf" aria-hidden="true">&#127809;</span>
+        Proudly Canadian
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Guide</h4>
+        <ul>
+          <li><a href="/how-it-works">How It Works</a></li>
+          <li><a href="/deadlines">Deadlines</a></li>
+          <li><a href="/evidence">Evidence</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/deferment">Deferment Check</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/#lead-section">Get Connected</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>PropertyTaxBC is an independent referral and educational service. We are not affiliated with, endorsed by, or connected to BC Assessment, the Property Assessment Review Panel, the Property Assessment Appeal Board, or the Government of British Columbia.</p>
+      <p>&copy; 2026 PropertyTaxBC. A project of EasyTech Digital Solutions.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/deadlines.js"></script>
+<script src="/js/calculator.js"></script>
+<script src="/js/lead-form.js"></script>
+</body>
+</html>
