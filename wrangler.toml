@@ -9,8 +9,8 @@ pages_build_output_dir = "."
 # then paste the resulting ids below.
 [[kv_namespaces]]
 binding = "LEADS"
-id = "REPLACE_WITH_PRODUCTION_NAMESPACE_ID"
-preview_id = "REPLACE_WITH_PREVIEW_NAMESPACE_ID"
+id = "7574ea46e83345758997c06cd4d17c70"
+preview_id = "efa9b29a5bbb4960a51d7d47848ff610"
 
 # ADMIN_TOKEN is a secret, not a var — set it with:
 #   wrangler pages secret put ADMIN_TOKEN
