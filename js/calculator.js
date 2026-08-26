@@ -78,6 +78,10 @@
     resultBox.className = "result is-visible result-tier-" + verdict.tier;
     var copy = COPY[verdict.tier];
 
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "assessment_check_completed", { tier: verdict.tier });
+    }
+
     var deltaStat = "";
     if (verdict.delta !== null) {
       deltaStat =
