@@ -68,20 +68,17 @@ convention) are the only files kept flat.
 
 ## Before you launch — open items
 
-1. **Domain — decided: `propertytaxbc.ca`.** Wired into `sitemap.xml`
-   (absolute URLs) and `robots.txt`'s `Sitemap:` line. The on-page brand
-   was renamed to match — **PropertyTaxBC** — across every page's header,
-   `<title>`, meta description, and footer copyright. Still to do:
-   register the domain (if not already) and point it at Cloudflare Pages.
-   One thing worth a deliberate gut-check before you commit to it: a name
-   this close to sounding official raises the bar slightly on the
-   "not affiliated with the Government of British Columbia" disclaimers
-   already threaded through every footer and hero — they were already
-   required, but they're carrying a bit more weight now.
-2. **Contact email.** `privacy/index.html`, `terms/index.html`, and
-   `about/index.html` all have a `[contact email to be added]`
-   placeholder — search for that string and replace it in all three files
-   before publishing.
+1. ~~Domain~~ — done. `propertytaxbc.ca` and `www.propertytaxbc.ca` are
+   both live on Cloudflare Pages (migrated off an earlier stray GitHub
+   Pages deployment of the same domain — see git history around
+   2026-08-23 if this ever needs re-diagnosing). GitHub Pages has been
+   disabled for the repo so there's no ambiguity about which host serves
+   traffic.
+2. ~~Contact email~~ — done. `info@propertytaxbc.ca` is live in
+   `privacy/index.html`, `terms/index.html`, and `about/index.html`,
+   routed via Cloudflare Email Routing to `admin@easytechvancouver.ca`.
+   Worth sending a real test email once to confirm delivery actually
+   works end to end, if that hasn't been done yet.
 3. ~~`/about` page copy~~ — done. Real first-person copy from the site's
    actual owner is in place as of 2026-08-22, not a placeholder.
 4. **Business name / entity.** Legal operator stays "EasyTech Digital
